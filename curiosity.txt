@@ -1,0 +1,25 @@
+This is an example of some experimentation I was doing with React and Tailwind:
+
+import react from "./assets/React.png";
+import tailwind from "./assets/TailwindCSS.png";
+
+function App() {
+    return (
+        <div className="min-h-screen flex items-center justify-center flex-col bg-slate-900">
+            <h1 className="text-5xl font-bold text-slate-400">React + Tailwind CSS!</h1>
+            <div className="flex items-center justify-center mt-10 gap-10">
+                <img className="w-24 h-21" src={react} alt="React"/>
+                <img className="w-24 h-16" src={tailwind} alt="Tailwind"/>
+            </div>
+            <button className="text-base mt-10 bg-slate-800 text-white p-5 rounded-full"
+            onClick={() => alert("Welcome to React + Tailwind!")}>Click Me!</button>
+        </div>
+    )
+}
+
+export default App;
+
+Followind this logic (and if I start building projects like this), rather than having a seprate
+file for HTML, CSS and JavaScript all my code would just be in one, so would this made coding
+faster? Also how significant would this be to employers and other Junior Developers? Is it seen
+as more practical or impressive?
